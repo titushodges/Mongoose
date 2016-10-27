@@ -1,0 +1,29 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper{
+	width: 950px;
+	height: auto;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+button{
+	display: block;
+	margin: 40px auto auto auto;
+}
+table {
+    border-collapse: collapse;
+
+    margin: 40px auto 20px auto;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+td:nth-child(even){
+	text-align: center;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mongeese</title>
+		<link rel="stylesheet" type="text/css" href="text.css">
+	</head>
+	<body>
+		<div id="wrapper">
+				<h2>All the Mongeese!</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Age</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% for (var x in users) { %>
+							<tr>
+								<td><%= users[x].name %></td>
+								<td><%= users[x].age %></td>
+								<td><a href="/mongooses/<%= users[x]._id %>">View Profile</a> &#124; <a href="/delete/<%= users[x]._id %>">Remove</a> &#124; <a href="/mongooses/<%= users[x]._id %>/edit">Edit</a></td>
+							</tr>
+						<% } %>
+					</tbody>
+				</table>
+				<button><a href="/mongooses/new">New Mongoose!</a></button>
+		</div>
+	</body>
+</html>
